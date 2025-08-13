@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Said ElHachmy — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Said • Portfolio</div>
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="primary-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">Toggle Theme</button>
+  </header>
+
+  <section id="about">
+    <div class="about-container">
+      <img src="me.jpg" alt="Said ElHachmy portrait">
+      <div class="about-text">
+        <h1>About</h1>
+        <p>Teacher • Aspiring Front-End Developer</p>
+        <p>I'm Said (سعيد). I teach English and Arabic to young learners and I'm on a focused journey to become a professional front-end developer.</p>
+        <p>Born: July 29, 1996 — Mauritania</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="grid grid-cols-2">
+      <div class="card">School English Teacher — ElMokhtar Ould Daddah School (Oct 5, 2023 – Jun 28, 2024)</div>
+      <div class="card">School English Teacher — ElAmana School (Oct 5, 2024 – Present)</div>
+      <div class="card">Private Teacher (English & Arabic) — Oct 7, 2022 – Ongoing</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid grid-cols-2" id="project-list">
+      <div class="card">Said's Emoji Game — Web puzzle game using emojis. [JavaScript, HTML, CSS]</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid grid-cols-2">
+      <div class="card">Professional License — High Professional Institute of Language and Translation, Nouadhibou — 2022</div>
+      <div class="card">Baccalaureate — Zemzem Private School — 2019</div>
+      <div class="card">Secondary Studies Completion — Essabel Private School — 2015</div>
+      <div class="card">Entry to First Year Secondary — Essabel Private School — 2011</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:medsaidmdelhachmy@gamil.com">medsaidmdelhachmy@gamil.com</a></p>
+      <p>Phone: <a href="tel:+22247324534">+222 47324534</a></p>
+      <p>GitHub: <a href="https://github.com/saidelhachmy" target="_blank" rel="noopener">github.com/saidelhachmy</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Said ElHachmy. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
