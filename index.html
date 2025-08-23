@@ -14,34 +14,71 @@
 </head>
 <body>
   <header>
-    <div class="brand">Said • Portfolio</div>
-    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" onclick="toggleMenu()">☰ Menu</button>
+    <div class="brand" id="brand">Said • Portfolio</div>
+    <button id="menu-toggle" class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" onclick="toggleMenu()">☰ Menu</button>
     <nav id="primary-nav">
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-      <a href="#projects"> <i class="fas fa-folder-open"></i> Projects</a>
-      <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
-      <a href="#contact"> <i class="fas fa-envelope"></i> Contact</a>
+        
+        <a href="#about" id="menu-about"><i class="fas fa-user"></i> About</a>
+    
+    <a href="#experience" id="menu-experience"><i class="fas fa-briefcase"></i> Experience</a>
+    
+      <a href="#projects" id="menu-projects"> <i class="fas fa-folder-open"></i> Projects</a>
+      
+      <a href="#education" id="menu-education"><i class="fas fa-user-graduate"></i> Education</a>
+      
+      <a href="#contact" id="menu-contact"> <i class="fas fa-envelope"></i> Contact</a>
+      
     </nav>
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">Toggle Theme</button>
+    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">Toggle Theme</button>
+    <!-- Language Switcher -->
+<div class="lang-switcher">
+  <button class="lang-btn" aria-label="Select language">🌐</button>
+  <div class="lang-menu">
+    <button data-lang="en" id="enMenu">English</button>
+    <button data-lang="fr" id="frMenu">Français</button>
+    <button data-lang="ar" id="arMenu">العربية</button>
+  </div>
+</div>
   </header>
 
   <section id="about">
     <div class="about-container">
       <img src="Assets/me.jpg" alt="Said ElHachmy portrait">
       <div class="about-text">
-        <h1 id="icon-about-text"><i class="fas fa-user"></i>About</h1>
-        <p>Teacher • Aspiring Front-End Developer</p>
-        <p>I'm <span id="highlightName">Said</span> (<span id="highlightName">سعيد</span>). I teach <span id="highlightWord">English</span> and <span id="highlightWord">Arabic</span> to young learners and I'm on a focused journey to become a professional <span id="highlightWord">front-end</span> developer.</p>
-        <p>Born: <span id="highlightWord">July 29</span>, 1996 — Mauritania</p>
+        <h2 id="icon-about-text"><i class="fas fa-user"></i> About</h2>
+        <p id="role">Teacher • Aspiring Front-End Developer</p>
+        <p id="intro">I'm <span id="highlightName">Said</span> (<span id="highlightName">سعيد</span>). I teach <span id="highlightWord">English</span> and <span id="highlightWord">Arabic</span> to young learners and I'm on a focused journey to become a professional <span id="highlightWord">front-end</span> developer.</p>
+        <p id="born">Born: <span id="highlightWord">July 29</span>, 1996 — Mauritania</p>
       </div>
     </div>
   </section>
 
   <section id="experience">
-    <h2 id="icon-experience"><i class="fas fa-briefcase"></i>Experience</h2>
+      
+    <h2 id="icon-experience"><i class="fas fa-briefcase"></i> Experience</h2>
+    
+    
     <div class="grid grid-cols-2">
+        
+              <div class="card" id="teaching">
+          
+        <div class="third-Experience">
+                  
+      
+          <i class="fas fa-chalkboard-teacher"></i>
+        <br />
+          
+          
+          <span id="highlightName">School English Teacher</span> — ElAmana School (Oct 5, 2024 – Present)
+          
+          </div>
+          
+         </div>
+        
+        
       <div class="card" id="teaching">
+          
+        <div class="second-Experience">
           
 
             <i class="fas fa-chalkboard-teacher"></i>
@@ -49,102 +86,156 @@
         <br />
           
           
-          <span id="highlightName">School English Teacher</span> — ElMokhtar Ould Daddah School (Oct 5, 2023 – Jun 28, 2024)</div>
+          <span id="highlightName">School English Teacher</span> — ElMokhtar Ould Daddah School (Oct 5, 2023 – Jun 28, 2024)
+          
+          </div>
+          </div>
+
           
       <div class="card" id="teaching">
           
+              <div class="first-Experience">
+                  
               
       
           <i class="fas fa-chalkboard-teacher"></i>
         <br />
           
           
-          <span id="highlightName">School English Teacher</span> — ElAmana School (Oct 5, 2024 – Present)</div>
           
-      <div class="card" id="teaching">
+          <span id="highlightName">Private Teacher</span> (English & Arabic) — Oct 7, 2022 – Ongoing
           
-              
-      
-          <i class="fas fa-chalkboard-teacher"></i>
-        <br />
+          </div>
           
+          </div>
           
-          
-          <span id="highlightName">Private Teacher</span> (English & Arabic) — Oct 7, 2022 – Ongoing</div>
     </div>
   </section>
 
   <section id="projects">
-    <h2 id="icon-projects"><i class="fas fa-folder-open"></i>Projects</h2>
+      
+      
+    <h2 id="icon-projects"><i class="fas fa-folder-open"></i> Projects</h2>
+    
+    
+    
     <div class="grid grid-cols-2" id="project-list">
         
       <div class="card" >
+          
+        <div class="first-Project">
+                  
+          
           <i id="saids-emoji-game" class="fas fa-gamepad"></i>
         <br />
           
-          <span id="highlightName"> Said's Emoji Game </span> — Web puzzle game using emojis. [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i> , HTML</span> <span id="langIcons"><i class="fab fa-html5"></i> , CSS</span> <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]</div>
+          <span id="highlightName"> Said's Emoji Game </span> — Web puzzle game using emojis. [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i> , HTML</span> <span id="langIcons"><i class="fab fa-html5"></i> , CSS</span> <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+          
+          </div>
+          
+          </div>
+          
+          
+          
     </div>
   </section>
 
   <section id="education">
-    <h2 id="icon-education"><i class="fas fa-user-graduate"></i>Education</h2>
+   
+   
+    <h2 id="icon-education"><i class="fas fa-user-graduate"></i> Education</h2>
+    
+    
+    
     <div class="grid grid-cols-2">
       <div class="card" id="diploma">
              
+             <div id="fourth-Diploma">
+                 
+
       
           <i class="fas fa-certificate"></i>
         <br />
           
-          <span id="highlightName">Professional License</span> — High Professional Institute of Languages and Translation, Nouadhibou — 2022</div>
+          <span id="highlightName">Professional License</span> — High Professional Institute of Languages and Translation, Nouadhibou — 2022
+          
+          </div>
+          
+          </div>
           
       <div class="card" id="diploma">
           
+              <div id="third-Diploma">
+                  
               
       
           <i class="fas fa-certificate"></i>
         <br />
           
-          <span id="highlightName">Baccalaureate</span> — Zemzem Private School — 2019</div>
+          <span id="highlightName">Baccalaureate</span> — Zemzem Private School — 2019
+          
+          </div>
+          
+          
+          </div>
           
           
       <div class="card" id="diploma">
-              
-      
+              <div id="second-Diploma">
+                  
+       
           <i class="fas fa-certificate"></i>
         <br />
           
           
-          <span id="highlightName">Secondary Studies Completion</span> — Essabel Private School — 2015</div>
+          <span id="highlightName">Secondary Studies Completion</span> — Essabel Private School — 2015
+          
+          </div>
+          
+          </div>
           
       <div class="card" id="diploma">
           
-              
-      
+              <div id="first-Diploma">
+                  
+
           <i class="fas fa-certificate"></i>
         <br />
           
           
-          <span id="highlightName">Entry to First Year Secondary</span> — Essabel Private School — 2011</div>
+          <span id="highlightName">Entry to First Year Secondary</span> — Essabel Private School — 2011
+         
+          </div>
+          
+          
+          </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2 id="icon-contact"><i class="fas fa-envelope"></i>Contact</h2>
+      
+      
+    <h2 id="icon-contact"><i class="fas fa-envelope"></i> Contact</h2>
+    
+    
+    
     <div class="card">
-  <p>I’d love to hear from you! Connect with me through any of the platforms below:
+  <p id="contactCard">I’d love to hear from you! Connect with me through any of the platforms below:
   </p>
     <div class="contact" id="my-contact">
-      <a href="mailto:medsaidmdelhachmy@gmail.com"><i class="fas fa-paper-plane"></i> Email</a>
+        
+      <a id="link-email" href="mailto:medsaidmdelhachmy@gmail.com"><i class="fas fa-paper-plane"></i> Email</a>
 
       <br />
       
       
-<a href="https://m.me/100085293536874" target="_blank">
+    <a id="link-messenger" href="https://m.me/100085293536874" target="_blank">
   <i class="fab fa-facebook-messenger"></i> Messenger
 </a>
+
 <br />
 
-<a href="https://wa.me/22247324534" target="_blank">
+    <a id="link-whatsapp" href="https://wa.me/22247324534" target="_blank">
   <i class="fab fa-whatsapp"></i> WhatsApp
 </a>
 
@@ -152,16 +243,17 @@
 
       
       <br />
-      <a href="https://www.linkedin.com/in/med-said-md-el-hachmy-639b71324" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br />
+      
+      <a id="link-linkedin" href="https://www.linkedin.com/in/med-said-md-el-hachmy-639b71324" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      
+      <br />
       
       
-
-      
-      <a href="https://github.com/saidelhachmy" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a id="link-github" href="https://github.com/saidelhachmy" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       
       
             <br />
-      <a href="tel:+22247324534">
+      <a id="link-call-me" href="tel:+22247324534">
   <i class="fas fa-phone"></i> Call Me
 </a>
       
@@ -171,10 +263,10 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="footer">
     © <span id="year"></span> Said ElHachmy. All rights reserved.
   </footer>
 
   <script src="script.js"></script>
 </body>
-        </html>
+</html>
