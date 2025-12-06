@@ -214,10 +214,43 @@ const translations = {
     
     firstProject:`
     
-           <i id="saids-emoji-game" class="fas fa-gamepad"></i>
+        <i id="saids-emoji-game" class="fas fa-gamepad"></i>
         <br />
-          
-          <span id="highlightName"> Said's Emoji Game </span> — Web puzzle game using emojis. [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i> , HTML</span> <span id="langIcons"><i class="fab fa-html5"></i> , CSS</span> <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+        <span id="highlightName"> Said's Emoji Game </span> — Web puzzle game using emojis. 
+        [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+        HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+        CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+        <br /><br />
+
+        <!-- 🚀 New Game Button -->
+        <a href="https://saidelhachmy.github.io/Saids-emoji-game/" 
+           target="_blank" 
+           class="project-btn">
+          Play Now 🎮
+        </a>
+    `,
+    
+    
+    secondProject:`
+    
+    <i id="class-manager" class="fas fa-chalkboard-teacher"></i>
+    <br />
+
+    <span id="highlightName"> Class Manager </span> — Web app for teachers to manage student data efficiently.
+    [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+    HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+    CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+    <br /><br />
+
+    <!-- 🌟 Class Manager Button -->
+    <a href="https://saidelhachmy.github.io/Class-Manager/" 
+       target="_blank" 
+       class="project-btn">
+      Visit App 📚
+    </a>
     `,
     
     
@@ -541,10 +574,42 @@ themeToggle:`
     
     firstProject:`
     
-           <i id="saids-emoji-game" class="fas fa-gamepad"></i>
-        <br />
-          
-          <span id="highlightName"> Said's Emoji Game </span> — Jeu de puzzle en ligne utilisant des émojis. [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i> , HTML</span> <span id="langIcons"><i class="fab fa-html5"></i> , CSS</span> <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+    <i id="saids-emoji-game" class="fas fa-gamepad"></i>
+    <br />
+
+    <span id="highlightName"> Said's Emoji Game </span> — Jeu web de devinettes utilisant des emojis.
+    [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+    HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+    CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+    <br /><br />
+
+    <!-- 🚀 New Game Button -->
+    <a href="https://saidelhachmy.github.io/Saids-emoji-game/" 
+       target="_blank" 
+       class="project-btn">
+      Jouer maintenant 🎮
+    </a>
+    `,
+    
+    secondProject:`
+    
+    <i id="class-manager" class="fas fa-chalkboard-teacher"></i>
+    <br />
+
+    <span id="highlightName"> Class Manager </span> — Application web permettant aux professeurs de gérer efficacement les données des élèves.
+    [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+    HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+    CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+    <br /><br />
+
+    <!-- 🌟 Class Manager Button -->
+    <a href="https://saidelhachmy.github.io/Class-Manager/" 
+       target="_blank" 
+       class="project-btn">
+      Accéder à l’application 📚
+    </a>
     `,
     
     
@@ -847,13 +912,42 @@ themeToggle:`
     `,
     
     firstProject:`
+    <i id="saids-emoji-game" class="fas fa-gamepad"></i>
+    <br />
+
+    <span id="highlightName"> Said's Emoji Game </span> — لعبة ويب للألغاز باستخدام الإيموجي.
+    [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+    HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+    CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+    <br /><br />
+
+    <!-- 🚀 New Game Button -->
+    <a href="https://saidelhachmy.github.io/Saids-emoji-game/" 
+       target="_blank" 
+       class="project-btn">
+      العب الآن 🎮
+    </a>
+`,
     
-           <i id="saids-emoji-game" class="fas fa-gamepad"></i>
-        <br />
-          
-          <span id="highlightName"> Said's Emoji Game </span> — لعبة ألغاز على الويب باستخدام الإيموجي. [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i> , HTML</span> <span id="langIcons"><i class="fab fa-html5"></i> , CSS</span> <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
-    `,
-    
+    secondProject:`
+    <i id="class-manager" class="fas fa-chalkboard-teacher"></i>
+    <br />
+
+    <span id="highlightName"> Class Manager </span> — تطبيق ويب للمعلمين لإدارة بيانات الطلاب بكفاءة.
+    [JavaScript <span id="langIcons"><i class="fab fa-js-square"></i></span> ,
+    HTML <span id="langIcons"><i class="fab fa-html5"></i></span> ,
+    CSS <span id="langIcons"><i class="fab fa-css3-alt"></i></span> ]
+
+    <br /><br />
+
+    <!-- 🌟 Class Manager Button -->
+    <a href="https://saidelhachmy.github.io/Class-Manager/" 
+       target="_blank" 
+       class="project-btn">
+      زيارة التطبيق 📚
+    </a>
+`,
     
     
 
@@ -1170,6 +1264,7 @@ langMenu.querySelectorAll('button').forEach(btn => {
     document.querySelector('#menu-projects').innerHTML = translations[lang].menuProjects;
     
     document.querySelector('.first-Project').innerHTML = translations[lang].firstProject;
+    document.querySelector('.second-Project').innerHTML = translations[lang].secondProject;
     
     
     
