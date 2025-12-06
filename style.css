@@ -303,7 +303,7 @@ i{
 }
 
 
-#saids-emoji-game {
+#saids-emoji-game,#class-manager {
     
     color: var(--accent-color);
     margin-right: 12px;
@@ -312,8 +312,46 @@ i{
     transition: 2.5s;
 }
 
+.first-Project a{
+    background-color: var(--bg-color);
+    color:var(--accent-color);
+    padding: 4px 8px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-#saids-emoji-game:hover{
+.first-Project a:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4px 8px;
+    border: 2px solid var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--text-color);
+}
+.second-Project a{
+    background-color: var(--bg-color);
+    color:var(--accent-color);
+    padding: 4px 8px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.second-Project a:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4px 8px;
+    border: 2px solid var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+
+
+
+
+#saids-emoji-game:hover,#class-manager:hover{
     
     font-size: 75px;
     
@@ -459,4 +497,4 @@ i{
 .lang-menu button:hover {
   background: var(--accent-color);
   color: white;
-}
+      }
